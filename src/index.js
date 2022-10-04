@@ -13,6 +13,8 @@ const server = http.createServer((request, response) => {
   );
 
   let { pathname } = parsedUrl;
+
+  console.log(pathname);
   let id = null;
 
   const splitEndPoint = pathname.split("/").filter(Boolean);
